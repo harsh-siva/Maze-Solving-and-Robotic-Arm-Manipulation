@@ -40,12 +40,13 @@ This project demonstrates the integration of a collaborative robotic arm with it
 
 ## Demonstration
 A demonstration video showcasing the maze-solving process and robotic arm execution.<br>
-[Demonstraion_Video](https://github.com/ChinmayAmrutkar/Integration-of-MyCobot-Pro-600-and-Digital-Twin-for-Maze-Navigation/blob/main/Digital_Twin_Video_Final_Project.mp4)<br>
-[Real Time Video](https://github.com/ChinmayAmrutkar/Integration-of-MyCobot-Pro-600-and-Digital-Twin-for-Maze-Navigation/blob/main/Demonstration_Video.mp4) <br> 
+[Demonstraion_Video](https://github.com/harsh-siva/Maze-Solving-and-Robotic-Arm-Manipulation/blob/main/Digital_Twin_Video_Final_Project.mp4)<br>
+[Real Time Video](https://github.com/harsh-siva/Maze-Solving-and-Robotic-Arm-Manipulation/blob/main/Demonstration_Video.mp4) <br> 
 <br>
 ![RAS_Final_Project](https://github.com/user-attachments/assets/4fbe5d59-d03d-4115-9aec-51ab28eb82fe)
 
 
 ## References
 For detailed methodologies and data, refer to the full [documentation](https://github.com/ChinmayAmrutkar/Integration-of-MyCobot-Pro-600-and-Digital-Twin-for-Maze-Navigation/blob/main/Documentation.pdf).
+
 
