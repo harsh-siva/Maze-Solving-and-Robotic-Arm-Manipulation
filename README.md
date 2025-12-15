@@ -46,7 +46,4 @@ A demonstration video showcasing the maze-solving process and robotic arm execut
 ![RAS_Final_Project](https://github.com/user-attachments/assets/4fbe5d59-d03d-4115-9aec-51ab28eb82fe)
 
 
-## References
-For detailed methodologies and data, refer to the full [documentation](https://github.com/ChinmayAmrutkar/Integration-of-MyCobot-Pro-600-and-Digital-Twin-for-Maze-Navigation/blob/main/Documentation.pdf).
-
 
