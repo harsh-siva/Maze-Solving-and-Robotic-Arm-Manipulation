@@ -1,50 +1,57 @@
-﻿# Integration of MyCobot Pro 600 and Digital Twin for Maze Navigation
+# Maze Solving and Robotic Arm Manipulation for MyCobot Pro 600
 
-This repository includes the documentation, code, and design resources for a project that integrates the MyCobot Pro 600 collaborative robotic arm with its digital twin to solve a 4x4 maze. The system leverages computer vision, robotic kinematics, and simulation technologies to autonomously plan and execute precise navigation paths.
+This repository contains the documentation, source code, and design files for a project where we integrate the MyCobot Pro 600 collaborative robotic arm with its digital twin to solve a 4×4 maze. The system combines computer vision, robot kinematics, and simulation tools to autonomously plan and execute accurate navigation paths from image to real-world motion.
 
 ## Overview
-This project demonstrates the integration of a collaborative robotic arm with its digital twin for real-world automation tasks. The MyCobot Pro 600 robotic arm was used to solve a 4x4 maze, combining vision systems, kinematic modeling, and simulation for:
-- Precise motion planning and execution.
-- Path validation using a MATLAB-based digital twin.
-- Real-world trajectory implementation using TCP communication.
+
+This project showcases how a collaborative robotic arm can be paired with a digital twin to perform a real-world automation task. Using the MyCobot Pro 600, we solve a 4×4 maze by combining a vision pipeline, kinematic modeling, and simulation in order to:
+
+- Plan and execute precise end-effector motion.
+- Validate paths in a MATLAB-based digital twin before deployment.
+- Reproduce validated trajectories on the physical robot via TCP communication.
 
 ## Features
-- **Digital Twin Integration**: Simulate and verify robotic motion paths using MATLAB.
-- **Maze Navigation**: Solve a 4x4 maze using OpenCV and convert solution paths to robot coordinates.
-- **Inverse Kinematics**: MATLAB-based computation of joint angles for smooth path execution.
-- **Real-Time Vision**: AI kit camera detects and define key waypoints in the maze.
+
+- **Digital Twin Integration**: Use MATLAB to simulate, visualize, and verify robot trajectories before sending them to hardware.  
+- **Maze Navigation**: Solve a 4×4 maze in Python with OpenCV and convert the resulting path into robot-frame coordinates.  
+- **Inverse Kinematics**: Compute joint configurations in MATLAB for smooth and continuous movement along the maze path.  
+- **Real-Time Vision**: Use the AI Kit camera to capture the maze and define key waypoints for navigation.
 
 ## Project Workflow
-1. **Maze Solution**:
-   - Maze is captured using the AI kit camera.
-   - Image processing detects boundaries and generates waypoints using OpenCV.
-   - Waypoints calibrated to real-world coordinates.
-2. **Digital Twin Simulation**:
-   - Digital twin created in MATLAB using URDF files exported from Fusion 360.
-   - Simulated robot motion validated for accuracy.
-3. **Path Execution**:
-   - Waypoints processed through an inverse kinematics model to compute joint angles.
-   - Angles transmitted via TCP communication to the robotic arm for real-world execution.
-4. **Validation**:
-   - Compared digital twin results with physical robot motion to ensure precision and resolve discrepancies.
+
+1. **Maze Solution**
+   - The maze image is acquired using the AI Kit camera.  
+   - OpenCV-based image processing extracts maze boundaries, grid structure, and path waypoints.  
+   - These waypoints are then mapped and calibrated to real-world coordinates.
+
+2. **Digital Twin Simulation**
+   - A digital twin of the MyCobot Pro 600 is created in MATLAB using URDF files exported from Fusion 360.  
+   - Simulated motion is used to verify reachability, continuity, and correctness of the path.
+
+3. **Path Execution**
+   - Calibrated waypoints are passed through an inverse kinematics model to obtain joint angles.  
+   - The computed angles are transmitted over TCP to the MyCobot Pro 600, enabling real-world path execution.
+
+4. **Validation**
+   - Motion in the digital twin is compared against the behavior of the physical robot.  
+   - Discrepancies are analyzed and reduced to improve accuracy and reliability.
 
 ## Technology Stack
-- **Hardware**: MyCobot Pro 600 robotic arm, AI kit camera.
-- **Software**: Python (OpenCV, socket programming), MATLAB (inverse kinematics, digital twin), Fusion 360 (robot modeling).
-- **Algorithms**: OpenCV for maze solving, linear interpolation for coordinate mapping.
+
+- **Hardware**: MyCobot Pro 600 robotic arm, AI Kit camera  
+- **Software**: Python (OpenCV, socket programming), MATLAB (inverse kinematics, digital twin), Fusion 360 (robot modeling and URDF export)  
+- **Algorithms**: OpenCV-based maze solving and linear interpolation for coordinate mapping and trajectory refinement  
 
 ## Future Scope
-- **Scalability**: Extend the system to navigate larger and more complex mazes.
-- **Automation**: Enhance autonomous navigation by integrating sensors for dynamic obstacle avoidance.
-- **Real-Time Feedback**: Implement live adjustments to robot motion paths based on sensory input.
+
+- **Scalability**: Extend the framework to handle larger and more complex maze layouts.  
+- **Automation**: Incorporate additional sensors to enable dynamic obstacle avoidance and more autonomous decision-making.  
+- **Real-Time Feedback**: Close the loop using live sensor feedback to adjust robot motion on the fly and increase robustness.
 
 ## Demonstration
-A demonstration video showcasing the maze-solving process and robotic arm execution.<br>
-[Demonstraion_Video](https://github.com/harsh-siva/Maze-Solving-and-Robotic-Arm-Manipulation/blob/main/Digital_Twin_Video_Final_Project.mp4)<br>
-[Real Time Video](https://github.com/harsh-siva/Maze-Solving-and-Robotic-Arm-Manipulation/blob/main/Demonstration_Video.mp4) <br> 
+
+A demonstration video illustrates the complete pipeline from maze solving to robotic execution:<br>  
+[Demonstraion_Video](https://github.com/harsh-siva/Maze-Solving-and-Robotic-Arm-Manipulation/blob/main/Digital_Twin_Video_Final_Project.mp4)<br>  
+[Real Time Video](https://github.com/harsh-siva/Maze-Solving-and-Robotic-Arm-Manipulation/blob/main/Demonstration_Video.mp4)<br>  
 <br>
 ![RAS_Final_Project](https://github.com/user-attachments/assets/4fbe5d59-d03d-4115-9aec-51ab28eb82fe)
-
-
-
-
