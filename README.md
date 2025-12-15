@@ -2,15 +2,6 @@
 
 This repository includes the documentation, code, and design resources for a project that integrates the MyCobot Pro 600 collaborative robotic arm with its digital twin to solve a 4x4 maze. The system leverages computer vision, robotic kinematics, and simulation technologies to autonomously plan and execute precise navigation paths.
 
-## Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Project Workflow](#project-workflow)
-- [Technology Stack](#technology-stack)
-- [Future Scope](#future-scope)
-- [Demonstration](#demonstration)
-- [References](#references)
-
 ## Overview
 This project demonstrates the integration of a collaborative robotic arm with its digital twin for real-world automation tasks. The MyCobot Pro 600 robotic arm was used to solve a 4x4 maze, combining vision systems, kinematic modeling, and simulation for:
 - Precise motion planning and execution.
@@ -57,3 +48,4 @@ A demonstration video showcasing the maze-solving process and robotic arm execut
 
 ## References
 For detailed methodologies and data, refer to the full [documentation](https://github.com/ChinmayAmrutkar/Integration-of-MyCobot-Pro-600-and-Digital-Twin-for-Maze-Navigation/blob/main/Documentation.pdf).
+
